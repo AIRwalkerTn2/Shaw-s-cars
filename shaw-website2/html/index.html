@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Shaw's Cars</title>
+    <link rel="shortcut icon" href="images/logoiset.jfif" type="">
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="../media/logo.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#introduction">About</a></li>
+            </ul>
+            <div class="login-signup">
+                <a href="../html/login.html">Login / Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    </header>
+    
+
+    <section id="intro">
+        <video autoplay loop muted>
+            <source src="../media/car.mp4" type="video/mp4">
+        </video>
+        <div class="intro-overlay">
+            <div class="intro-text">
+                <h2>Welcome to Our Website</h2>
+                <p>Your introductory phrase goes here.</p>
+                <a href="#service" class="btn">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+ <section id="service">
+    <h1>Our Services</h1>
+ </section>
+
+ <section class="image-row">
+    <div class="image-container" style="background-image: url('../media/img1.jpg');">
+        <p class="image-text">Repair It!</p>
+        <button class="btnn" onclick="playAudio('audio1')">GO!</button>
+    </div>
+    <div class="image-container" style="background-image: url('../media/img3.jpg');">
+        <p class="image-text">Customise It!</p>
+        <button class="btnn" onclick="playAudio('audio2')">GO!</button>
+    </div>
+    <div class="image-container" style="background-image: url('../media/img2.jpg');">
+        <p class="image-text">Tune It!</p>
+        <button class="btnn" onclick="playAudio('audio3')">GO!</button>
+    </div>
+    <div class="image-container" style="background-image: url('../media/img4.jpg');">
+        <p class="image-text">Our Marketplace!</p>
+        <button class="btnn" onclick="playAudio('audio4')">GO!</button>
+    </div>
+</section>
+
+<audio id="audio1" src="../sounds/Air Wrench (sound effect) for editing.mp3"></audio>
+<audio id="audio2" src="../sounds/Spray Paint - HQ Sound Effects.mp3"></audio>
+<audio id="audio3" src="../sounds/Turbo Flutter - Sound Effect.mp3"></audio>
+<audio id="audio4" src="../sounds/Money Sound Effect.mp3"></audio>
+
+<script>
+    function playAudio(id) {
+        var audio = document.getElementById(id);
+        audio.play();
+    }
+</script>
+
+<section id="introduction">
+    <div class="astxt"  >
+        <H1>About Us!</H1>
+        <p>
+            At Shaw's Cars, we breathe life into automotive dreams.
+            Our passion for high-performance vehicles drives us to redefine the boundaries of car tuning.
+            Welcome to a world where horsepower meets innovation, and every ride is a canvas for artistic expression.Unleash the full potential of your vehicle with our premier tuning services. 
+            From precision engine enhancements to bespoke aesthetic modifications, we are dedicated to delivering a driving experience that transcends the ordinary. Immerse yourself in the culture of automotive excellence.
+            Our platform is more than a website; it's a community where gearheads, tuners, and enthusiasts come together. Explore in-depth guides, stay updated on the latest trends,and discover the artistry behind every tuned masterpiece.Join us on a journey where speed, style, and precision converge.
+            Shaw's Cars – where every ride tells a unique story of performance and individuality.
+            </p>
+    </div>
+    <div id="fimg">
+        <img src="../media/engine.png" alt="">
+    </div>
+</section> 
+
+   
+      <footer>
+        <div class="footer-content">
+            <ul>
+            <p>&copy; 2024 Shaw's Cars. All rights reserved.</p>
+            <p>Ahmed Nidhal Chaouachi G4</p>
+        </ul>
+        </div>
+    </footer>
+    
+
+   
+    
+</body>
+
+</html>
